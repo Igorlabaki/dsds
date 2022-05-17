@@ -41,7 +41,7 @@ interface HighLigthData{
 
 export  function Dashboard(){
   
-  const [data, setData] = useState<DataListProps[]>([])
+  const [peokrepokroep, setData] = useState<DataListProps[]>([])
   const [highLigthData, setHighLigthData] = useState<HighLigthData>( {} as HighLigthData)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -194,7 +194,7 @@ export  function Dashboard(){
                   Listagem
               </Title>
               <TransactionList 
-                data={data}
+                data={peokrepokroep}
                 keyExtractor={(item) => item.id}
                 renderItem={({item}) => <TransactionCard data={item}/> }
               />
